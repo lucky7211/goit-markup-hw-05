@@ -13,6 +13,7 @@
     --footer-link-backgraund:rgba(255, 255, 255, 0.1);
     --button-hover-color:#188CE8;
     --shadow-color:rgba(0, 0, 0, 0.25);
+    --overlay-color:rgba(33, 150, 243, 0.9);
     --logo-font:"Raleway",sans-serif;
     --main-font:"Roboto",sans-serif;
     --primary-title-size:44px;
@@ -88,7 +89,6 @@ button {
 .link {
     text-decoration: none;
     color:inherit;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========HEADER========= */
@@ -146,6 +146,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover,
@@ -173,8 +174,8 @@ button {
     top: 44px;
     left:-2px;
     height: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px var(--shadow-color);
     border-radius: 2px;
 }
 
@@ -207,6 +208,7 @@ button {
     letter-spacing: 0.02em;
     color:var(--secondary-color);
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .mail {
@@ -265,7 +267,7 @@ button {
     background-color: var(--accent-color);
     color: var(--common-white);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -371,17 +373,14 @@ button {
     bottom: 0;
     width: 370px;
     height: 70px;
-    padding: 27px 0px;
-
-    font-family: var(--main-font);
     font-weight: var(--bold);
-    font-size: 14px;
     line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--common-white);
     background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Секція "Наша команда" */
@@ -458,6 +457,7 @@ button {
     height: 44px;
     border-radius: 50%;
     color: var(--icon-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
@@ -485,6 +485,7 @@ button {
     border-radius: 4px;
     background-color: var(--common-white);
     color: var(--icon-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-title {
@@ -559,6 +560,7 @@ button {
     font-size: var(--primary-text-size);
     line-height: 1.71;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current,
 .footer-address-link:hover,
@@ -577,6 +579,7 @@ button {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-shadow: 0px 4px 4px var(--shadow-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -730,7 +733,7 @@ button {
     letter-spacing: 0.03em;
 
     color: var(--common-white);
-    background: rgba(33, 150, 243, 0.9);
+    background: var(--overlay-color);
     overflow-y: scroll;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -770,7 +773,7 @@ button {
     background-color: var(--common-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    /* translate: 100px; */
+    /* transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1500ms cubic-bezier(0.4, 0, 0.2, 1),transform 2000ms cubic-bezier(0,1.67,1,1); */
     
 }
 
